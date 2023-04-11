@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Modal</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-center min-h-screen bg-gray-300">
+      <div class="p-10 rounded-xl shadow-lg bg-[white]">
+        <div class="flex flex-col md:flex-row rounded-l-xl">
+          <div>
+            <img
+              src="./headphone.png"
+              alt="headphones"
+              class="rounded-xl h-32 w-40 transform hover:scale-105 duration-200 mx-auto"
+            />
+          </div>
+          <div class="flex flex-col justify-start p-4 md:text-left text-center">
+
+            <p
+              class="px-4 mb-2 h-6 bg-black text-white rounded-full flex justify-center items-center w-fit text-xs"
+            >
+              Free Shipping
+            </p>
+
+            <div class="font-medium text-xl mb-8 max-w-sm">
+              Razer Kraken Kitty Edt Gaming Headset Quartz
+            </div>
+            <p class="text-xs font-semibold line-through mb-2">$799</p>
+            <h1 class="text font-bold text-5xl mb-2">$599</h1>
+            <p class="text-xs text-slate-400 mb-4">
+              The offer is valid until April 3 or as long as stock lasts!
+            </p>
+            <button
+              class="hover:bg-blue-700 hover:border-blue-900 bg-blue-600 text-white rounded-lg p-2 border border-b-8 border-blue-800 active:border-b-0 active:shadow-inner active:shadow-slate-600 duration-200"
+            >
+              Add To Cart
+            </button>
+            <p class="text-xs mt-4 font-medium">50+ pcs, in stock.</p>
+            <div class="flex mt-4 justify-between">
+              <button
+                class="border border-slate-400 rounded-md bg-transparent flex px-6 p-2 flex-row items-center text-sm"
+              >
+                <img src="./weight.png" class="h-6 mr-2" alt="weight" />
+                Add To Cart
+              </button>
+              <button
+                class="border border-slate-400 rounded-md bg-transparent flex px-8 p-2 flex-row items-center text-sm"
+              >
+                <img src="heart.png" class="h-6 mr-2" alt="heart" />
+                Add To Wishlist
+              </button>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
