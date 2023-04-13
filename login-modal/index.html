@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="md:bg-rose-50 bg-white">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,5 +21,96 @@
       };
     </script>
   </head>
-  <body></body>
+  <body class="md:bg-rose-50 bg-white">
+    <div class="flex flex-row items-center min-h-screen justify-center">
+      <div
+        class="bg-[white] bg-white rounded-md md:shadow-lg flex items-center"
+      >
+        <!-- LEFT CONTENT -->
+        <div
+          class="px-10 p-10 flex flex-col justify-between space-y-6 max-w-md"
+        >
+          <h1 class="font-bold capitalize font-mono text-2xl">log in</h1>
+          <p class="font-thin">
+            Log in to your account to upload or download pictures, videos or
+            music.
+          </p>
+          <input
+            type="text"
+            class="p-4 focus-outline-none border border-slate-300 font-thin rounded-md"
+            placeholder="Enter your email address"
+          />
+          <div class="flex flex-row justify-between items-center">
+            <a href="" class="text-cyan-800 hover:text-cyan-500"
+              >Forgot Password</a
+            >
+            <button
+              class="flex justify-center items-center p-4 space-x-4 font-sans font-bold text-white rounded-md shadow-lg px-9 bg-cyan-700 shadow-cyan-100 hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150"
+            >
+              Next
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line x1="13" y1="18" x2="19" y2="12"></line>
+                <line x1="13" y1="6" x2="19" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+          <hr class="border-1 border-slate-300" />
+          <div class="flex items-center flex-row justify-center">
+            <p class="font-thin text-slate-500">or log in with</p>
+          </div>
+          <div
+            class="flex md:flex-row flex-col justify-center md:space-y-0 gap-4"
+          >
+            <button
+              class="hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150 border border-slate-300 p-2 font-thin rounded-md flex items-center gap-2 px-12 justify-center"
+            >
+              <img src="./images/facebook.png" alt="" class="h-10" />
+              Facebook
+            </button>
+            <button
+              class="hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150 border border-slate-300 p-2 font-thin rounded-md px-12 flex items-center justify-center gap-2"
+            >
+              <img src="./images/google.png" alt="" class="h-10" />
+              Google
+            </button>
+          </div>
+        </div>
+        <!-- LOGIN IMAGE -->
+        <div class="relative">
+          <img src="./images/image.jpg" class="w-80 hidden md:block" />
+          <div class="absolute md:top-4 right-4 bottom-60">
+            <button
+              class="rounded-full md:bg-white bg-slate-200 p-2 md:bg-opacity-70 hover:rotate-180 hover:bg-opacity-100 hover:duration-1000"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 md:w-6 md:h-6 text-black group-hover:text-gray-600"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
